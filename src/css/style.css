@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html body {
+    min-height: 100vh;
+}
+
 body {
     @apply text-gray-300 p-0 m-0;
 }
@@ -16,4 +20,23 @@ header {
 
 #bar svg.icosn {
     @apply w-6 h-6 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500;
+}
+
+.fila-1 {
+  @apply grid grid-cols-6 justify-items-stretch gap-4 text-center leading-10 mb-4 mx-auto max-w-lg px-10;
+}
+.fila {
+  @apply grid grid-cols-7 gap-4 text-center leading-10 mb-4 mx-auto max-w-lg;
+}
+
+.asiento {
+  @apply cursor-pointer w-10 h-10 bg-green-900 rounded-md;
+}
+
+.reservado {
+  @apply w-10 h-10 bg-purple-900 text-white;
+}
+
+.seleccionado {
+  @apply w-10 h-10 bg-red-500 text-white;
 }
