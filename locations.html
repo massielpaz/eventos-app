@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos Online</title>
+  <script type="module" crossorigin src="/eventos-app/assets/index-bf0e0447.js"></script>
+  <link rel="stylesheet" href="/eventos-app/assets/index-81452218.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="first bg-gray-50 pb-4 text-black">
+            <div class="header flex justify-between p-4">
+                <svg class="w-7 h-7 text-black" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75">
+                    </path>
+                </svg>
+                <p class="text-base font-bold">Seleccionar</p>
+                <svg class="w-7 h-7 text-black" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z">
+                    </path>
+                </svg>
+            </div>
+
+    </header>
+
+
+    <!-- Para no llenar de código repetitivo se crean las clases en el archivo style.css -->
+    <!-- Se definen la clase fila, asiento, seleccionado y reservado -->
+    <!-- Crear un contenedor para guardar las filas -->
+
+    <div class="p-4 container">
+        <!-- Crear la primera fila -->
+        <div class="fila-1">
+            <div class="asiento">1A</div>
+            <div class="asiento reservado">2A</div>
+            <div class="asiento reservado">3A</div>
+            <div class="asiento">4A</div>
+            <div class="asiento">5A</div>
+            <div class="asiento">6A</div>
+        </div>
+
+        <!-- Segunda fila -->
+        <div class="fila">
+            <div class="asiento">1B</div>
+            <div class="asiento seleccionado">2B</div>
+            <div class="asiento seleccionado">3B</div>
+            <div class="asiento seleccionado">4B</div>
+            <div class="asiento">5B</div>
+            <div class="asiento">6B</div>
+            <div class="asiento">7B</div>
+        </div>
+
+        <!-- Tercera fila -->
+        <div class="fila">
+            <div class="asiento">1C</div>
+            <div class="asiento reservado">2C</div>
+            <div class="asiento">3C</div>
+            <div class="asiento">4C</div>
+            <div class="asiento">5C</div>
+            <div class="asiento">6C</div>
+            <div class="asiento">7C</div>
+        </div>
+
+        <!-- Cuarta fila -->
+        <div class="fila">
+            <div class="asiento">1D</div>
+            <div class="asiento">2D</div>
+            <div class="asiento">3D</div>
+            <div class="asiento">4D</div>
+            <div class="asiento reservado">5D</div>
+            <div class="asiento reservado">6D</div>
+            <div class="asiento">7D</div>
+        </div>
+
+        <!-- Quinta fila -->
+        <div class="fila">
+            <div class="asiento">1E</div>
+            <div class="asiento">2E</div>
+            <div class="asiento">3E</div>
+            <div class="asiento reservado">4E</div>
+            <div class="asiento">5E</div>
+            <div class="asiento">6E</div>
+            <div class="asiento">7E</div>
+        </div>
+
+        <!-- Sexta fila -->
+        <div class="fila">
+            <div class="asiento reservado">1F</div>
+            <div class="asiento">2F</div>
+            <div class="asiento">3F</div>
+            <div class="asiento reservado">4F</div>
+            <div class="asiento">5F</div>
+            <div class="asiento">6F</div>
+            <div class="asiento">7F</div>
+        </div>
+        <!-- Séptima fila-->
+        <div class="fila">
+            <div class="asiento">1G</div>
+            <div class="asiento">2G</div>
+            <div class="asiento">3G</div>
+            <div class="asiento">4G</div>
+            <div class="asiento">5G</div>
+            <div class="asiento">6G</div>
+            <div class="asiento reservado">7G</div>
+        </div>
+    </div>
+
+    </div>
+    <div class="second relative -top-3 rounded-3xl bg-white text-black text-sm">
+        <div class="indicators flex gap-4 p-4">
+            <div class="flex gap-1">
+                <div class="color bg-red-500 w-5 h-5 rounded"></div>
+                <p>SELECCIONADO</p>
+            </div>
+            <div class="flex gap-1">
+                <div class="color bg-purple-900 w-5 h-5 rounded"></div>
+                <p>RESERVADO</p>
+            </div>
+            <div class="flex gap-1">
+                <div class="color border-2 bg-green-900 w-5 h-5 rounded"></div>
+                <p>DISPONIBLE</p>
+            </div>
+        </div>
+        <div class="about text-black p-2">
+            <p class="text-base font-medium pt-2">Sobre el evento</p>
+            <div class="flex justify-between py-6">
+                <p>Concierto</p>
+                <p>Ocotal</p>
+                <p>Parque central</p>
+            </div>
+            <div>
+                <p class="text-gray-500 text-justify whitespace-pre-line dark:text-gray-400">
+                    Disfruta del evento de Hatsune Miko el, ¡selecciona tu lugar y goza del evento!
+                <p>
+                <div class="flex justify-between grid-cols-3 gap-6 m-10 mb-10">
+                    <article class="container bg-white shadow-2xl rounded-2xl p-5">
+                        <h1 class="font-bold text-yellow-500">Conoce mas detalles</h1>
+                        <p class="font-light text-gray-500 hover:font-bold">
+                            <img class="rounded-full shadow-lg" src="/eventos-app/assets/2-82760a31.jpg" alt="Thomas Lean image" />
+                        </p>
+                        <h6 class="text-sm text-gray-300 mb-5">Hatsune Miku una cantante virtual</h6>
+                        <a href="index.html"
+                            class="rounded-lg py-2 px-4 text-center text-white bg-yellow-400 hover:bg-yellow-500">
+                            Ver mas...
+                        </a>
+                    </article>
+                </div>
+            </div>
+
+            <button type="button"
+                class="text-white mt-5 bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-200 dark:focus:ring-red-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">
+                Comprar boleto
+            </button>
+        </div>
+    </div>
+
+</html>
+
+</body>
+
+</html>
