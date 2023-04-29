@@ -20,7 +20,8 @@ export default defineConfig({
                 main: resolve(__dirname, 'index.html'),
                 events: resolve(__dirname, 'events.html'),
                 locations: resolve(__dirname, 'locations.html'),
-                timeline: resolve(__dirname, 'timeline.html')
+                timeline: resolve(__dirname, 'timeline.html'),
+                perfil: resolve(__dirname, 'perfil.html')
             }
         }
     },
